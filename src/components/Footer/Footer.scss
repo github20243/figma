@@ -1,0 +1,14 @@
+.container-block {
+  margin: 0 auto;
+  width: 1518px;
+  height: 519px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+
+  .img-block {
+    width: 1110px;
+    height: 455px;
+  }
+}

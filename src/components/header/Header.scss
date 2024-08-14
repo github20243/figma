@@ -1,0 +1,124 @@
+.container-header {
+  width: 1518px;
+  height: 72px;
+  margin:  0 auto;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+
+  .content-header {
+    width: 90%;
+    max-width: 1536px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .title-text {
+    font-family: sans-serif;
+    font-size: 28px;
+    color: #359740;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-list {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    font-family: sans-serif;
+    margin-left: 50px;
+
+    li {
+      font-size: 14px;
+      color: #333;
+      cursor: pointer;
+      font-weight: 600;
+      position: relative;
+
+      &:hover {
+        color: #359740;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: -20px;  
+        top: 50%;
+        transform: translateY(-50%);
+        height: 20px;
+        width: 1px;
+        background-color: #e0e0e0; 
+      }
+
+      &:last-child::after {
+        display: none; 
+      }
+    }
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 15px;
+
+    img {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .search-container {
+    position: relative;
+    width: 200px;
+
+    .search-input {
+      padding: 8px 20px 8px 40px; 
+      border: 1px solid #ccc;
+      border-radius: 30px;
+      outline: none;
+      width: 100%;
+
+      &::placeholder {
+        color: #aaa;
+        font-size: 14px;
+      }
+
+      &:focus {
+        border-color: #359740;
+      }
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      pointer-events: none; 
+    }
+  }
+
+  .wishlist-icon, .cart-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
